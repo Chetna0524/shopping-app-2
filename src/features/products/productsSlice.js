@@ -24,7 +24,7 @@ export const extendedProductsSlice = apiSlice.injectEndpoints({
 			query: (productId) => `/products/${productId}`,
 		}),
 		getAllCategories: builder.query({
-			query: () => "/products/categories",
+			query: () => "/products/category-list",
 		}),
 		getSingleCategory: builder.query({
 			query: (category) => `/products/category/${category}`,
